@@ -19,12 +19,13 @@ const conn = connect();
 conn.on('connect', () => {
   console.log("Successfully connected to game server");
   conn.write("Name: LUV");
-  setInterval(func = () =>{
+  /*setInterval(func = () =>{
     conn.write("Move: up");
   }, 500);
+  */
 })
 conn.on('data', data => {
   console.log(data);
 });
 
-module.exports = connect;
+module.exports = { connect };
