@@ -30,6 +30,15 @@ if(key === "s"){
 if(key === "d"){
   connnection.write("Move: Right");
   }
+if(key === "f"){
+  connection.write("Say: Hello");
+  } 
+if(key === "p"){
+  connection.write("Say: BLAM!");
+  }
+if(key === "l"){
+  connection.write("Say: Lalala");
+ }
 };
 
 module.exports = { setupInput };
