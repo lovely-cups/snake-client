@@ -19,16 +19,16 @@ const handleUserInput = (key) => {
     process.exit();
 }
 if(key === 'w'){
-  connection.write("Move: Up");
+  connection.write(UPKEY);
 }
 if(key === "a"){
-  connection.write("Move: Left");
+  connection.write(LEFTKEY);
 }
 if(key === "s"){
-  connection.write("Move: Down");
+  connection.write(DOWNKEY);
 }
 if(key === "d"){
-  connnection.write("Move: Right");
+  connnection.write(RIGHTKEY);
   }
 if(key === "f"){
   connection.write("Say: Hello");
